@@ -1,8 +1,12 @@
 import Navbar from './Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Navbar />
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
+
   );
 }
 

@@ -10,10 +10,10 @@ function Navbar() {
                 </div>
                 <div className="nav-elements">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/projects">Projects</NavLink></li>
+                        <li><NavLink to="/about">About Me</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>
             </div>
