@@ -1,0 +1,20 @@
+.landing {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 0;
+    background: url(../../images/greeting_img.JPG); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing__header {
+
+}
+
+.landing__greeting {
+    
+}
