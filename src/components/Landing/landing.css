@@ -5,10 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7% 0;
-    background: url(../../images/greeting_img.JPG); 
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0 0 10% 0;
 }
 
 .landing__header {

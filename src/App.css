@@ -29,11 +29,8 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upper__half {
+    background: url(./images/greeting_img1.JPG); 
+    background-repeat:no-repeat;
+    background-size: cover;
 }
