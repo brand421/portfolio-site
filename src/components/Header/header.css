@@ -1,14 +1,11 @@
 .side__menu {
     width: 250px;
-    height: auto;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 7;
     background-color: red;
-    padding-top: 20%;
-    display: flex;
-    align-items: center;
+    padding-top: 10%;
 }
 .nav {
     height: 100vh;
