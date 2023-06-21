@@ -54,3 +54,14 @@
 .nav__link:hover {
     color: var(--title-color-dark);
 }
+
+.portrait {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait img {
+    width: 5%;
+}
