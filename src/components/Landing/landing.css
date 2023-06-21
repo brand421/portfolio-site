@@ -1,25 +1,46 @@
 .landing {
-    width: auto;
+    width: 100%;
     margin-left: 250px;
     position: fixed;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    margin-right: 5%;
+    height: 100vh;
 }
 
 .landing__photo {
     display: flex;
-    justify-self: center;
-    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 290px;
     image-resolution:initial;
 }
 
 img {
-    width: 25%;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 .landing__text {
-    justify-self: center;
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    width: 250px;
+}
+
+.landing__header {
+    margin-bottom: 3%;
+}
+
+.landing__greeting {
+    margin-top: 3%;
+}
+
+.landing__para {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
 }
