@@ -1,13 +1,10 @@
 import React from "react";
 import "./header.css";
 
-function Header() {
+function SideMenu() {
   return (
-    <header className="header">
+    <header className="side__menu">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">
-          Brandan Isaacs
-        </a>
         <div className="nav__menu">
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -41,4 +38,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default SideMenu;

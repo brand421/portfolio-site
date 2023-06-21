@@ -28,9 +28,3 @@
 .App-link {
   color: #61dafb;
 }
-
-.upper__half {
-    background: url(./images/greeting_img1.JPG); 
-    background-repeat:no-repeat;
-    background-size: cover;
-}

@@ -1,17 +1,25 @@
 .landing {
-    width: 100%;
-    position: relative;
+    width: auto;
+    margin-left: 250px;
+    position: fixed;
     display: flex;
-    flex-direction: column;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
-    padding: 0 0 10% 0;
+    align-content: center;
 }
 
-.landing__header {
-
+.landing__photo {
+    display: flex;
+    justify-self: center;
+    width: auto;
+    image-resolution:initial;
 }
 
-.landing__greeting {
-    
+img {
+    width: 25%;
+}
+
+.landing__text {
+    justify-self: center;
+    width: auto;
 }
