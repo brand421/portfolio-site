@@ -1,12 +1,15 @@
-import SideMenu from "./components/Header/Header";
-import Landing from "./components/Landing/Landing";
+import Home from "./components/Home/Home";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <div>
-      <SideMenu />
-      <Landing />
+      <BrowserRouter>
+        <Sidebar />
+        <Home />
+      </BrowserRouter>
     </div>
   );
 }
