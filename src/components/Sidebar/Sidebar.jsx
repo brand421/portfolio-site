@@ -50,7 +50,11 @@ export default function Sidebar() {
   }
 
   const sideList = () => {
-    <Box className="menu__slider" sx={{ width: 250 }} onClick={toggleSlider}>
+    <Box
+      className="menu__slider"
+      sx={{ width: 250 }}
+      onClick={() => setOpen(false)}
+    >
       <Avatar className="avatar" src={portrait} alt="portrait of Brandan" />
       <List>
         {listItems.map((listItem, index) => (
