@@ -11,15 +11,17 @@ import {
   Avatar,
   IconButton,
   List,
+  ListItem,
   ListItemIcon,
   ListItemText,
   CssBaseline,
   Drawer,
   ListItemButton,
+  AppBar,
 } from "@mui/material";
 import portrait from "../../images/Brandon.jpg";
 import "./sidebar.css";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Sidebar() {
   const listItems = [
@@ -48,16 +50,16 @@ export default function Sidebar() {
   }
 
   const sideList = () => {
-    <Box className="menu__slider" component="div">
+    <Box className="menu__slider" sx={{ width: 250 }} onClick={toggleSlider}>
       <Avatar className="avatar" src={portrait} alt="portrait of Brandan" />
       <List>
         {listItems.map((listItem, index) => (
-          <ListItemButton className="listItem" key={index}>
-            <ListItemIcon className="listItem">
-              {listItem.listIcon}
-            </ListItemIcon>
-            <ListItemText primary={listItem.listText} />
-          </ListItemButton>
+          <ListItem className="listItem" key={listItem}>
+            <ListItemButton>
+              <ListItemIcon>{listItem.listIcon}</ListItemIcon>
+              <ListItemText primary={listItem.listText} />
+            </ListItemButton>
+          </ListItem>
         ))}
       </List>
     </Box>;
@@ -67,19 +69,23 @@ export default function Sidebar() {
     <>
       <CssBaseline />
 
-      <Box
-        component="nav"
-        className="header"
-        sx={{ backgroundColor: "#e0e0e0" }}
-      >
-        <Toolbar>
-          <IconButton onClick={toggleSlider} color="grey">
-            <Menu />
-          </IconButton>
-          <Drawer open={open} anchor="right" onClose={toggleSlider}>
-            {sideList()}
-          </Drawer>
-        </Toolbar>
+      <Box component="nav" className="header">
+        <AppBar
+          position="static"
+          sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+        >
+          <Toolbar>
+            <IconButton
+              onClick={toggleSlider}
+              sx={{ backgroundColor: "#e0e0e0" }}
+            >
+              <Menu />
+            </IconButton>
+            <Drawer open={open} anchor="left" onClose={toggleSlider}>
+              {sideList}
+            </Drawer>
+          </Toolbar>
+        </AppBar>
       </Box>
     </>
   );
