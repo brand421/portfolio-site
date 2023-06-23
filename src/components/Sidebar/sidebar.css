@@ -6,11 +6,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 125px;
-    padding-left: 25px;
     background-color: #434242;
 }
 
 #photo {
+    display: flex;
+    align-self: center;
     border-radius: 50%;
     width: 125px;
     margin-bottom: 85%;
@@ -18,10 +19,18 @@
 
 .link {
     display: flex;
+    width: auto;
+    height:fit-content;
     align-items: center;
-    padding-left: 65px;   
+    justify-content:start;
+    /* padding-left: 65px;    */
     color: white;
-    padding-bottom: 10%;
+    padding: 5% 0;
+}
+
+.menu__items :hover {
+    background-color: aquamarine;
+    transition: .5s;
 }
 
 .menu__items {
