@@ -1,5 +1,29 @@
 .home__container {
     position: relative;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;   
+    margin-left: 250px;
+    height: 100vh;
+    width: auto;
+}
+
+.home__item {
+    display: flex;
     flex-direction: column;
+    flex: 1;
+    width: auto;
+}
+
+.home__item img {
+    width: 350px;
+    height: auto;
+    border-radius: 25%;
+}
+
+@media screen and (max-width: 950px) {
+    .home__container {
+        flex-direction: column-reverse;
+    }
 }

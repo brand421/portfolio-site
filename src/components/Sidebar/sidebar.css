@@ -13,8 +13,8 @@
     display: flex;
     align-self: center;
     border-radius: 50%;
-    width: 125px;
-    margin-bottom: 85%;
+    width: 145px;
+    margin-bottom: 75%;
 }
 
 .link {
@@ -26,6 +26,7 @@
     /* padding-left: 65px;    */
     color: white;
     padding: 5% 0;
+    padding-left: 70px;
 }
 
 .menu__items :hover {

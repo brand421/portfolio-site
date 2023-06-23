@@ -1,4 +1,8 @@
-export default function Home() {
+import "./home.css";
+import React from "react";
+import mountainPhoto from "../../images/greeting_square.JPG";
+
+function Home() {
   return (
     <div className="home__container">
       <div className="home__item">
@@ -6,8 +10,10 @@ export default function Home() {
         <h3>A Full Stack Developer</h3>
       </div>
       <div className="home__item">
-        <h1>Hi, I'm Brandan</h1>
+        <img src={mountainPhoto} alt="" />
       </div>
     </div>
   );
 }
+
+export default Home;
