@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 125px;
-    background-color: #434242;
+    background-color: none;
 }
 
 #photo {
@@ -17,21 +17,15 @@
     margin-bottom: 75%;
 }
 
-.link {
+.menu__item {
     display: flex;
     width: auto;
     height:fit-content;
     align-items: center;
-    justify-content:start;
-    /* padding-left: 65px;    */
+    justify-content:flex-start;
     color: white;
     padding: 5% 0;
     padding-left: 70px;
-}
-
-.menu__items :hover {
-    background-color: aquamarine;
-    transition: .5s;
 }
 
 .menu__items {
@@ -41,9 +35,6 @@
     align-items: space-around;
 }
 
-.menu__item {
-    display: inline-flex;
-}
 
 /* .menu__slider {
     width: 250px;

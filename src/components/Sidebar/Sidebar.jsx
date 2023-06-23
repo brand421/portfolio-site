@@ -19,10 +19,15 @@ import "./sidebar.css";
 import React, { useState } from "react";
 
 export default function Sidebar() {
-  const [active, setActive] = useState(0);
+  const [hover, setHover] = useState(false);
 
-  function setCurrentPage(page) {}
+  function toggleHoverOn() {
+    setHover(true);
+  }
 
+  function toggleHoverOff() {
+    setHover(false);
+  }
   return (
     <nav id="sidebar__container">
       <div className="photo__div">
@@ -30,9 +35,18 @@ export default function Sidebar() {
       </div>
       <div className="menu__items">
         {sidebarItems.map((item, index) => (
-          <Link to={item.itemPath} className="link" key={index}>
-            <IconButton>{item.itemIcon}</IconButton>
-            <h3 className="menu__item">{item.itemName}</h3>
+          <Link
+            onMouseEnter={toggleHoverOn}
+            onMouseDown={toggleHoverOff}
+            style={{
+              backgroundColor: hover ? "none" : "rgba(127, 255, 212, 0.541)",
+            }}
+            to={item.itemPath}
+            className="menu__item"
+            key={index}
+          >
+            <IconButton sx={{ hover: "none" }}>{item.itemIcon}</IconButton>
+            <h3 className="menu__text">{item.itemName}</h3>
           </Link>
         ))}
       </div>

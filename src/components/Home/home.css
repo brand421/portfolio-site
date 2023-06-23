@@ -1,26 +1,43 @@
+body {
+    background: url("../../images/bg_bggenerator_com.jpg");
+    
+}
+
 .home__container {
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;   
+    align-items: center;  
+    justify-content: center; 
     margin-left: 250px;
     height: 100vh;
     width: auto;
+    color: white;
+    background: inherit;
 }
 
 .home__item {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1;
-    width: auto;
+    flex-basis:0;
+    width: 150px;
+    background: transparent;
+}
+
+.home__text {
+    display: flex;
+    align-items: flex-start;
 }
 
 .home__item img {
     width: 350px;
     height: auto;
-    border-radius: 25%;
+    border-radius: 50% 25%;
 }
+
 
 @media screen and (max-width: 950px) {
     .home__container {
