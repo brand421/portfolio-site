@@ -1,4 +1,41 @@
-.menu__slider {
+#sidebar__container {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+    padding-left: 25px;
+    background-color: #434242;
+}
+
+#photo {
+    border-radius: 50%;
+    width: 125px;
+    margin-bottom: 85%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding-left: 65px;   
+    color: white;
+    padding-bottom: 10%;
+}
+
+.menu__items {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: space-around;
+}
+
+.menu__item {
+    display: inline-flex;
+}
+
+/* .menu__slider {
     width: 250px;
     background-color: seagreen;
     height: 100%;
@@ -17,4 +54,4 @@
 
 .header {
     background-color: none;
-}
+} */

@@ -5,10 +5,10 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Sidebar />
       <Home />
-    </div>
+    </BrowserRouter>
   );
 }
 
