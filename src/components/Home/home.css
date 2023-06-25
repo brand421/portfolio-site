@@ -3,6 +3,11 @@ body {
     
 }
 
+@keyframes onLoad {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .home__container {
     position: relative;
     display: flex;
@@ -14,7 +19,7 @@ body {
     height: 100vh;
     width: auto;
     color: white;
-    background: inherit;
+    background: inherit;    
 }
 
 .home__item {
@@ -25,11 +30,17 @@ body {
     flex-basis:0;
     width: 150px;
     background: transparent;
+    opacity: 0;
+    animation-name: onLoad;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .home__text {
     display: flex;
     align-items: flex-start;
+    font-size: x-large;
 }
 
 .home__item img {
@@ -44,3 +55,4 @@ body {
         flex-direction: column-reverse;
     }
 }
+

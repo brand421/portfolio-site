@@ -3,6 +3,7 @@ import React from "react";
 import mountainPhoto from "../../images/greeting_square.JPG";
 
 function Home() {
+
   return (
     <div className="home__container">
       <div className="home__item"></div>

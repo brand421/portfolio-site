@@ -16,6 +16,7 @@ import portrait from "../../images/Brandon.jpg";
 import sidebarItems from "./sidebarItems";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+
 import React from "react";
 
 export default function Sidebar() {
@@ -27,11 +28,6 @@ export default function Sidebar() {
       <div className="menu__items">
         {sidebarItems.map((item, index) => (
           <Link
-            // onMouseEnter={toggleHoverOn}
-            // onMouseDown={toggleHoverOff}
-            // style={{
-            //   backgroundColor: hover ? "none" : "rgba(127, 255, 212, 0.541)",
-            // }}
             to={item.itemPath}
             className="menu__item"
             key={index}
