@@ -16,18 +16,9 @@ import portrait from "../../images/Brandon.jpg";
 import sidebarItems from "./sidebarItems";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
-import React, { useState } from "react";
+import React from "react";
 
 export default function Sidebar() {
-  const [hover, setHover] = useState(false);
-
-  function toggleHoverOn() {
-    setHover(true);
-  }
-
-  function toggleHoverOff() {
-    setHover(false);
-  }
   return (
     <nav id="sidebar__container">
       <div className="photo__div">
@@ -36,16 +27,16 @@ export default function Sidebar() {
       <div className="menu__items">
         {sidebarItems.map((item, index) => (
           <Link
-            onMouseEnter={toggleHoverOn}
-            onMouseDown={toggleHoverOff}
-            style={{
-              backgroundColor: hover ? "none" : "rgba(127, 255, 212, 0.541)",
-            }}
+            // onMouseEnter={toggleHoverOn}
+            // onMouseDown={toggleHoverOff}
+            // style={{
+            //   backgroundColor: hover ? "none" : "rgba(127, 255, 212, 0.541)",
+            // }}
             to={item.itemPath}
             className="menu__item"
             key={index}
           >
-            <IconButton sx={{ hover: "none" }}>{item.itemIcon}</IconButton>
+            <IconButton>{item.itemIcon}</IconButton>
             <h3 className="menu__text">{item.itemName}</h3>
           </Link>
         ))}
