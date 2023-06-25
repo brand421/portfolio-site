@@ -32,7 +32,7 @@ export default function Sidebar() {
             className="menu__item"
             key={index}
           >
-            <IconButton>{item.itemIcon}</IconButton>
+            <IconButton sx={{":hover": {backgroundColor:"transparent"}}}>{item.itemIcon}</IconButton>
             <h3 className="menu__text">{item.itemName}</h3>
           </Link>
         ))}

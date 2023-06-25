@@ -14,7 +14,7 @@ const sidebarItems = [
   {
     itemName: "About",
     itemIcon: <PersonOutlineOutlined sx={{ color: "white" }} />,
-    itemPath: "/about",
+    itemPath: "../../about",
   },
   {
     itemName: "Projects",

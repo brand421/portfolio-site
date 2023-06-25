@@ -1,12 +1,23 @@
+@keyframes onLoad {
+    0% {opacity: 0; width: 0;}
+    100% {opacity: 1; width: 250px;}
+}
+
 #sidebar__container {
     position: fixed;
-    width: 250px;
+    width: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 125px;
     background-color: none;
+    opacity: 0;
+    animation-name: onLoad;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    
 }
 
 #photo {
@@ -47,23 +58,3 @@
 .IconButton :hover {
     background-color: transparent;
 }
-/* .menu__slider {
-    width: 250px;
-    background-color: seagreen;
-    height: 100%;
-}
-
-.avatar {
-    margin: 0.5rem auto;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-}
-
-.listItem {
-    color: white;
-}
-
-.header {
-    background-color: none;
-} */
