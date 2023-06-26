@@ -1,18 +1,13 @@
-import Home from "./components/Home/Home";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
-import About from "./components/About/About";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
     <BrowserRouter>
-    <Sidebar />
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="about" element={<About />} />
-      </Routes>
+      <Sidebar />
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }

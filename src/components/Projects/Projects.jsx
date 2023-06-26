@@ -1,12 +1,11 @@
-import "./home.css";
 import React from "react";
-import mountainPhoto from "../../images/greeting_square.JPG";
 import { motion } from "framer-motion";
+import "./projects.css";
 
-export default function Home() {
+export default function Projects() {
   return (
     <motion.div
-      className="home__container"
+      className="projects__container"
       initial={{
         opacity: 0,
         transform: "translateX(-50px)",
@@ -25,15 +24,8 @@ export default function Home() {
         transition: { duration: 0.1 },
       }}
     >
-      <div className="home__item"></div>
-      <div className="home__item home__text">
-        <h1>Hi, I'm Brandan</h1>
-        <h3>A Full Stack Developer</h3>
-      </div>
-      <div className="home__item">
-        <img src={mountainPhoto} alt="" />
-      </div>
-      <div className="home__item"></div>
+      <h1 className="projects__heading">Projects I have worked on</h1>
+      <h2 className="projects__subheading">with accompanied Github Link</h2>
     </motion.div>
   );
 }

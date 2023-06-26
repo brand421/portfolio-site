@@ -3,11 +3,6 @@ body {
     
 }
 
-@keyframes fadeOpacity {
-    0% {opacity: 0; margin-right: 3%;}
-    100% {opacity: 1; margin-right: 0;}
-}
-
 .home__container {
     position: relative;
     display: flex;
@@ -30,12 +25,7 @@ body {
     flex-basis:0;
     width: 150px;
     background: transparent;
-    opacity: 0;
     margin-right: 3%;
-    animation-name: fadeOpacity;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
 .home__text {
