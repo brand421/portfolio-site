@@ -1,0 +1,60 @@
+@keyframes onLoad {
+    0% {opacity: 0; width: 0;}
+    100% {opacity: 1; width: 250px;}
+}
+
+#sidebar__container {
+    position: fixed;
+    width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+    background-color: none;
+    opacity: 0;
+    animation-name: onLoad;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    
+}
+
+#photo {
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+    width: 145px;
+    margin-bottom: 75%;
+}
+
+.menu__item {
+    display: flex;
+    width: auto;
+    height:fit-content;
+    align-items: center;
+    justify-content:flex-start;
+    color: white;
+    padding: 5% 0;
+    padding-left: 70px;
+}
+
+.menu__items {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: space-around;
+}
+
+.menu__items :hover {
+    background-color: rgba(127, 255, 212, 0.541);
+    transition: .5s;
+}
+
+.menu__item :hover {
+    background-color: transparent;
+}
+
+.IconButton :hover {
+    background-color: transparent;
+}
