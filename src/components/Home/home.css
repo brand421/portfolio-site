@@ -1,0 +1,59 @@
+body {
+    background: url("../../images/bg_bggenerator_com.jpg");
+    
+}
+
+@keyframes fadeOpacity {
+    0% {opacity: 0; margin-right: 3%;}
+    100% {opacity: 1; margin-right: 0;}
+}
+
+.home__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;  
+    justify-content: center; 
+    margin-left: 250px;
+    height: 100vh;
+    width: auto;
+    color: white;
+    background: inherit;    
+}
+
+.home__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    flex-basis:0;
+    width: 150px;
+    background: transparent;
+    opacity: 0;
+    margin-right: 3%;
+    animation-name: fadeOpacity;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.home__text {
+    display: flex;
+    align-items: flex-start;
+    font-size: x-large;
+}
+
+.home__item img {
+    width: 350px;
+    height: auto;
+    border-radius: 50% 25%;
+}
+
+
+@media screen and (max-width: 950px) {
+    .home__container {
+        flex-direction: column-reverse;
+    }
+}
+

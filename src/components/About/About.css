@@ -1,0 +1,13 @@
+.about__container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__text {
+    color: white;
+    flex-direction: column;
+}
