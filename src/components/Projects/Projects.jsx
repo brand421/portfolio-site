@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
 import "./projects.css";
 import projectItems from "./projectItems";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { useState } from "react";
 
 export default function Projects() {
+  // const [hoverText, setHoverText] = useState(false);
+
+  // function handleMouseHover() {
+  //   setHoverText = !hoverText;
+  // }
+
   return (
     <motion.div
       className="projects__container"
@@ -32,15 +40,24 @@ export default function Projects() {
       <div className="carousel">
         {projectItems.map((project, index) => (
           <>
-            <Carousel autoPlay centerMode>
+            <Carousel
+              centerMode={true}
+              dynamicHeight={false}
+              autoFocus={true}
+              showThumbs={false}
+            >
               <div>
                 <h3>{project.projectName}</h3>
-                <img src={project.projectImg} />
+                <img
+                  className="carousel__img"
+                  src={project.projectImg}
+                  alt=""
+                  title="Click to see this project!"
+                />
                 <p>{project.projectDescr}</p>
+                <a href={project.projectGithub}>Github</a>
               </div>
             </Carousel>
-
-            <a href={project.projectGithub}>Github</a>
           </>
         ))}
       </div>
