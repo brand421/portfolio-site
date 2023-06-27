@@ -3,15 +3,8 @@ import "./projects.css";
 import projectItems from "./projectItems";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { useState } from "react";
 
 export default function Projects() {
-  // const [hoverText, setHoverText] = useState(false);
-
-  // function handleMouseHover() {
-  //   setHoverText = !hoverText;
-  // }
-
   return (
     <motion.div
       className="projects__container"
@@ -38,14 +31,17 @@ export default function Projects() {
         <h2 className="projects__subheading">with accompanied Github Link</h2>
       </div>
       <div className="carousel">
-        {projectItems.map((project, index) => (
-          <>
-            <Carousel
-              centerMode={true}
-              dynamicHeight={false}
-              autoFocus={true}
-              showThumbs={false}
-            >
+        <Carousel
+          centerMode
+          centerSlidePercentage={75}
+          dynamicHeight={false}
+          autoFocus={true}
+          autoPlay
+          showThumbs={false}
+          width="750px"
+        >
+          {projectItems.map((project, index) => (
+            <>
               <div>
                 <h3>{project.projectName}</h3>
                 <img
@@ -57,9 +53,9 @@ export default function Projects() {
                 <p>{project.projectDescr}</p>
                 <a href={project.projectGithub}>Github</a>
               </div>
-            </Carousel>
-          </>
-        ))}
+            </>
+          ))}
+        </Carousel>
       </div>
     </motion.div>
   );
