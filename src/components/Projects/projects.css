@@ -6,7 +6,7 @@
     align-items: center;  
     justify-content: center; 
     margin-left: 250px;
-    height: 100vh;
+    height: 100%;
     width: auto;
     color: white;
     background: inherit;    
@@ -39,4 +39,16 @@
     color: white;
     text-decoration: none;
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 1200px) {
+    .carousel {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .carousel {
+        max-width: 25%;
+    }
 }
