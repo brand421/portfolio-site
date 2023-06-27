@@ -44,16 +44,30 @@ export default function Projects() {
           renderIndicator={(clickHandler, isSelected, index) => {
             return <li key={index} style={{ visibility: "none" }} />;
           }}
+          statusFormatter={(currentItem, total) => {
+            return (
+              <p>
+                Project {currentItem} of {total}
+              </p>
+            );
+          }}
         >
           {projectItems.map((project, index) => (
             <div>
               <h3 className="carousel__header">{project.projectName}</h3>
-              <img
-                className="carousel__img"
-                src={project.projectImg}
-                alt=""
-                aria-label={project.projectDescr}
-              />
+              <div>
+                <a href={project.projectLink} target="_blank" rel="noreferrer">
+                  <div>
+                    <img
+                      className="carousel__img"
+                      src={project.projectImg}
+                      alt=""
+                      aria-label={project.projectDescr}
+                    />
+                  </div>
+                </a>
+              </div>
+
               <p></p>
               <a href={project.projectGithub} className="github__link">
                 Github
