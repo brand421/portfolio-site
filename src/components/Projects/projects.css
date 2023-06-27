@@ -11,3 +11,9 @@
     color: white;
     background: inherit;    
 }
+
+.heading__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

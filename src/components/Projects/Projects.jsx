@@ -1,6 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import "./projects.css";
+import projectItems from "./projectItems";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Projects() {
   return (
@@ -24,8 +25,25 @@ export default function Projects() {
         transition: { duration: 0.1 },
       }}
     >
-      <h1 className="projects__heading">Projects I have worked on</h1>
-      <h2 className="projects__subheading">with accompanied Github Link</h2>
+      <div className="heading__text">
+        <h1 className="projects__heading">Projects I have worked on</h1>
+        <h2 className="projects__subheading">with accompanied Github Link</h2>
+      </div>
+      <div className="carousel">
+        {projectItems.map((project, index) => (
+          <>
+            <Carousel autoPlay centerMode>
+              <div>
+                <h3>{project.projectName}</h3>
+                <img src={project.projectImg} />
+                <p>{project.projectDescr}</p>
+              </div>
+            </Carousel>
+
+            <a href={project.projectGithub}>Github</a>
+          </>
+        ))}
+      </div>
     </motion.div>
   );
 }
