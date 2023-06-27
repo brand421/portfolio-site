@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import "./projects.css";
 import projectItems from "./projectItems";
@@ -34,26 +35,30 @@ export default function Projects() {
         <Carousel
           centerMode
           centerSlidePercentage={75}
+          infiniteLoop
           dynamicHeight={false}
-          autoFocus={true}
           autoPlay
+          stopOnHover
           showThumbs={false}
-          width="750px"
+          width="1000px"
+          renderIndicator={(clickHandler, isSelected, index) => {
+            return <li key={index} style={{ visibility: "none" }} />;
+          }}
         >
           {projectItems.map((project, index) => (
-            <>
-              <div>
-                <h3>{project.projectName}</h3>
-                <img
-                  className="carousel__img"
-                  src={project.projectImg}
-                  alt=""
-                  title="Click to see this project!"
-                />
-                <p>{project.projectDescr}</p>
-                <a href={project.projectGithub}>Github</a>
-              </div>
-            </>
+            <div>
+              <h3 className="carousel__header">{project.projectName}</h3>
+              <img
+                className="carousel__img"
+                src={project.projectImg}
+                alt=""
+                aria-label={project.projectDescr}
+              />
+              <p></p>
+              <a href={project.projectGithub} className="github__link">
+                Github
+              </a>
+            </div>
           ))}
         </Carousel>
       </div>
