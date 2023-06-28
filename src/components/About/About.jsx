@@ -10,12 +10,12 @@ export default function About() {
         opacity: 0,
         transform: "translateX(-50px)",
         delay: "1s",
-        transition: "2s",
+        transition: "3s",
       }}
       animate={{
         opacity: 1,
         transform: "translateX(0px)",
-        transition: "2s",
+        transition: "3s",
         delay: "2s",
       }}
       exit={{
@@ -24,9 +24,16 @@ export default function About() {
         transition: { duration: 0.1 },
       }}
     >
-      <div>
-        <h1 className="about__text">this is my about section</h1>
+      <div className="about__item"></div>
+      <div className="about__item">
+        <img alt="Brandan and his wife"></img>
       </div>
+      <div className="about__item about__text">
+        <h1 className="about__header">Hi, I'm Brandan</h1>
+        <p>I'm a hobbyist full stack developer that would love to
+        join your team</p>
+      </div>
+      <div className="about__item"></div>
     </motion.div>
   );
 }

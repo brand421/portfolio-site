@@ -13,12 +13,12 @@ export default function Projects() {
         opacity: 0,
         transform: "translateX(-50px)",
         delay: "1s",
-        transition: "2s",
+        transition: "3s",
       }}
       animate={{
         opacity: 1,
         transform: "translateX(0px)",
-        transition: "2s",
+        transition: "3s",
         delay: "2s",
       }}
       exit={{
@@ -30,6 +30,7 @@ export default function Projects() {
       <div className="heading__text">
         <h1 className="projects__heading">Projects I have worked on</h1>
         <h2 className="projects__subheading">with accompanied Github Link</h2>
+        <p>Click on the image to have it take you to the project!</p>
       </div>
       <div className="carousel">
         <Carousel
@@ -68,8 +69,10 @@ export default function Projects() {
                 </a>
               </div>
 
-              <p></p>
-              <a href={project.projectGithub} className="github__link">
+              <br></br>
+              <p>{project.projectDescr}</p>
+              <br />
+              <a href={project.projectGithub} className="github__link" target="_blank" rel="noreferrer">
                 Github
               </a>
             </div>
