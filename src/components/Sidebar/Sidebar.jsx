@@ -21,7 +21,7 @@ export default function Sidebar() {
           onClick={handleShowSidebar}
         />
       </div>
-      <div className={`menu__items ${showSidebar && "active"}`}>
+      <div className={`menu__items ${showSidebar && "inactive"}`}>
         {sidebarItems.map((item, index) => (
           <Link to={item.itemPath} className="menu__item" key={index}>
             <IconButton sx={{ ":hover": { backgroundColor: "transparent" } }}>

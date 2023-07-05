@@ -42,7 +42,8 @@ h3 {
 
 @media screen and (max-width: 950px) {
     .about__container {
-        flex-direction: column-reverse;
-        width: 650px
+        flex-direction: column;
+        margin-left: 25%;
+        /* height: 100%; */
     }
 }
