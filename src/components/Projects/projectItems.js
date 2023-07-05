@@ -1,6 +1,7 @@
 import propertySite from "./projectImages/property_management_site.jpg";
 import noteApp from "./projectImages/keeper_app.png";
 import todoApp from "./projectImages/to-do-list.jpg";
+import blogSite from "./projectImages/blog_site.jpg";
 
 const projectItems = [
   {
@@ -26,6 +27,13 @@ const projectItems = [
       "A website made with HTML, CSS, and Bootstrap, with some Javascript functionality",
     projectLink: "",
     projectGithub: "https://github.com/brand421/Property-Management-Site",
+  },
+  {
+    projectName: "Blog Site",
+    projectImg: blogSite,
+    projectDescr: "A blog site that saves composed posts to a DB",
+    projectLink: "",
+    projectGithub: "https://github.com/brand421/Blog-Site",
   },
 ];
 

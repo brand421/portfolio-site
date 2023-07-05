@@ -1,0 +1,25 @@
+.contact__container{
+    width: auto;
+    height: 97vh;
+    margin-left: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__header {
+    padding-bottom: 25%;
+}
+
+.contact__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 35%;
+}
+
+.contact__text {
+    padding-left:20%;
+}

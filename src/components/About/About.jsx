@@ -39,12 +39,12 @@ export default function About() {
         <p>
           that would love to join your team. I started my programming journey in
           October of 2022, and dabbled in a couple different disciplines before
-          settling on Full Stack Development.
+          settling on Full Stack Development with a focus on the MERN stack.
           <br></br>
           <br></br>
           Outside of coding, I enjoy hockey (both playing and watching), as well
           as playing guitar. I also run my own home server out of the basement
-          for file backup and media storage. Also, it hosts this very website!
+          for file backup and media storage.
         </p>
       </div>
       <div className="about__item"></div>
