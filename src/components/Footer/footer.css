@@ -4,3 +4,9 @@
     justify-content: center;
     margin-left: 250px;
 }
+
+@media (max-width: 900px) {
+    .footer {
+        margin-left: 0;
+    }
+}

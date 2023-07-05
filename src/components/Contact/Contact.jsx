@@ -39,6 +39,7 @@ function Contact() {
             }}
             href="mailto:brandan.isaacs@gmail.com"
             disableRipple
+            className="contact__icon"
           >
             <EmailOutlinedIcon
               fontSize="large"
@@ -58,6 +59,7 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
             disableRipple
+            className="contact__icon"
           >
             <CodeOutlined fontSize="large" sx={{ color: "white" }} />
             <h3 className="contact__text">Github</h3>
@@ -71,6 +73,7 @@ function Contact() {
             disableRipple
             href={resume}
             download="Brandan Isaacs.pdf"
+            className="contact__icon"
           >
             <FeedOutlined fontSize="large" sx={{ color: "white" }} />
             <h3 className="contact__text">Resume</h3>

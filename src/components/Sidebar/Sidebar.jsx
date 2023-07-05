@@ -3,15 +3,25 @@ import portrait from "../../images/Brandon.jpg";
 import sidebarItems from "./sidebarItems";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Sidebar() {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const handleShowSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
   return (
-    <nav id="sidebar__container">
+    <nav className="sidebar__container">
       <div className="photo__div">
-        <img id="photo" src={portrait} alt="Brandan portrait" />
+        <img
+          className="photo"
+          src={portrait}
+          alt="Brandan portrait"
+          onClick={handleShowSidebar}
+        />
       </div>
-      <div className="menu__items">
+      <div className={`menu__items ${showSidebar && "active"}`}>
         {sidebarItems.map((item, index) => (
           <Link to={item.itemPath} className="menu__item" key={index}>
             <IconButton sx={{ ":hover": { backgroundColor: "transparent" } }}>
