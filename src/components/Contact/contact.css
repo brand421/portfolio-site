@@ -37,6 +37,10 @@
 
 @media (max-width: 900px) {
     .contact__container {
-        margin-left: 0;
+        margin-left: 10%;
+    }
+
+    .contact__links {
+        padding-left: 25%;
     }
 }

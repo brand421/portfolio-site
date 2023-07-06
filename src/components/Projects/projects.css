@@ -4,9 +4,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;  
-    justify-content: center; 
+    justify-content: center;
     margin-left: 250px;
-    height: 97vh;
+    height: 95vh;
     width: auto;
     color: white;
     background: inherit;    
@@ -16,13 +16,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2.5% 0 4% 0;
+    margin: 2.5% 0 1% 0;
 }
 
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 23%;
     margin-bottom: 5%;
 }
 
@@ -40,16 +41,37 @@
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    margin: 5% 0;
+
 }
 
-@media only screen and (max-width: 1200px) {
+li ::marker {
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1300px) {
     .carousel {
-        max-width: 75%;
+        /* max-width: 75%;
+        margin-left: 25%; */
+    }
+
+    .carousel__header {
+    margin-bottom: 15px;
+}
+
+    .heading__text {
+        margin-bottom: 0%;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .carousel {
-        max-width: 25%;
+        width: 100%;
+        margin-right: 65%;
+    }
+
+    .heading__text {
+        width: 100%;
+        /* text-align: center; */
     }
 }

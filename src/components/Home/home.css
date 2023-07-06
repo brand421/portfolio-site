@@ -1,6 +1,6 @@
 body {
     background: url("../../images/bg_bggenerator_com.jpg");
-    
+    overflow-x: hidden;
 }
 
 .home__container {
@@ -44,6 +44,16 @@ body {
 @media screen and (max-width: 950px) {
     .home__container {
         flex-direction: column-reverse;
+        margin-left: 10%;
+        /* height: 100%; */
+    }
+    
+    .home__item img {
+        width: 145%;
+    }
+
+    .home__text {
+        margin-right: 12%;
+        margin-top: 
     }
 }
-

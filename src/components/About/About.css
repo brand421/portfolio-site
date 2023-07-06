@@ -40,10 +40,15 @@ h3 {
     border-radius: 25% 50%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1300px) {
     .about__container {
         flex-direction: column;
         margin-left: 25%;
         /* height: 100%; */
+        font-size: small;
+    }
+
+    .about__header {
+        font-size: larger;
     }
 }

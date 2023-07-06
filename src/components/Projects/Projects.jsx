@@ -28,20 +28,16 @@ export default function Projects() {
       }}
     >
       <div className="heading__text">
-        <h1 className="projects__heading">Projects I have worked on</h1>
-        <h2 className="projects__subheading">with accompanied Github Link</h2>
-        <p>Click on the image to have it take you to the project!</p>
+        <h1 className="projects__heading">Projects I have completed</h1>
       </div>
       <div className="carousel">
         <Carousel
-          centerMode
-          centerSlidePercentage={75}
           infiniteLoop
           dynamicHeight={false}
           autoPlay
           stopOnHover
           showThumbs={false}
-          width="1000px"
+          width="65%"
           renderIndicator={(clickHandler, isSelected, index) => {
             return <li key={index} style={{ visibility: "none" }} />;
           }}
@@ -57,7 +53,11 @@ export default function Projects() {
             <div>
               <h3 className="carousel__header">{project.projectName}</h3>
               <div>
-                <a href={project.projectLink} target="_blank" rel="noreferrer">
+                <a
+                  href={project.projectGithub}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div>
                     <img
                       className="carousel__img"
@@ -72,9 +72,6 @@ export default function Projects() {
               <br></br>
               <p>{project.projectDescr}</p>
               <br />
-              <a href={project.projectGithub} className="github__link" target="_blank" rel="noreferrer">
-                Github
-              </a>
             </div>
           ))}
         </Carousel>

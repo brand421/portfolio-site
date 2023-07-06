@@ -4,6 +4,7 @@ import sidebarItems from "./sidebarItems";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Sidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,7 +22,13 @@ export default function Sidebar() {
           onClick={handleShowSidebar}
         />
       </div>
-      <div className={`menu__items ${showSidebar && "inactive"}`}>
+      <motion.div
+        animate={{
+          width: showSidebar ? "75%" : "60%",
+          opacity: showSidebar ? 0 : 1,
+        }}
+        className="menu__items"
+      >
         {sidebarItems.map((item, index) => (
           <Link to={item.itemPath} className="menu__item" key={index}>
             <IconButton sx={{ ":hover": { backgroundColor: "transparent" } }}>
@@ -30,7 +37,7 @@ export default function Sidebar() {
             <h3 className="menu__text">{item.itemName}</h3>
           </Link>
         ))}
-      </div>
+      </motion.div>
     </nav>
   );
 }
