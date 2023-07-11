@@ -1,29 +1,29 @@
 .projects__container {
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;  
     justify-content: center;
-    margin-left: 250px;
+    margin-left: 56%;
     height: 97vh;
-    width: auto;
+    width: 100%;
     color: white;
     background: inherit;    
 }
 
 .heading__text {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    margin: 2.5% 0 1% 0;
+    text-align: center;
+    margin: 2.5% 0;
 }
 
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 23%;
     margin-bottom: 5%;
 }
 
@@ -50,9 +50,9 @@ li ::marker {
 }
 
 @media only screen and (max-width: 1300px) {
-    .carousel {
-        /* max-width: 75%;
-        margin-left: 25%; */
+
+    .projects__container {
+        margin-right: 50%;
     }
 
     .carousel__header {

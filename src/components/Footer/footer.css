@@ -9,6 +9,6 @@
 @media (max-width: 900px) {
     .footer {
         margin-left: 0;
-        margin-top: 50%;
+        padding-top: 5%;
     }
 }

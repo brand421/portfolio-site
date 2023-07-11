@@ -37,7 +37,7 @@ export default function Projects() {
           autoPlay
           stopOnHover
           showThumbs={false}
-          width="65%"
+          width="100%"
           renderIndicator={(clickHandler, isSelected, index) => {
             return <li key={index} style={{ visibility: "none" }} />;
           }}

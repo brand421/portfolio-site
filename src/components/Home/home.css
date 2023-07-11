@@ -59,15 +59,22 @@ body {
     .home__container {
         flex-direction: column;
         margin-left: 10%;
-        /* height: 100%; */
+        margin-right: 25%;
     }
     
     .home__item img {
-        width: 15%;
+        width: 100%;
     }
+}
 
-    .home__text {
-        margin-right: 12%;
-        margin-top: 
+
+@media screen and (max-width: 400px) {
+    .home__item {
+        height: 100px;
+        margin-bottom: 0;
+    }
+    
+    .home__item img {
+        width: 125%;
     }
 }
