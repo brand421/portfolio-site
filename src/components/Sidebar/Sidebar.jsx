@@ -27,8 +27,8 @@ export default function Sidebar({ children }) {
         </div>
         <motion.div
           animate={{
-            width: showSidebar ? "280px" : "0px",
-            display: showSidebar ? "flex" : "none",
+            width: showSidebar ? "225px" : "-250px",
+            opacity: showSidebar ? 1 : 0,
           }}
         >
           {sidebarItems.map((item, index) => (

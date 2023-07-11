@@ -25,7 +25,6 @@ export default function Home() {
         transition: { duration: 0.1 },
       }}
     >
-      <div className="home__item"></div>
       <div className="home__item home__text">
         <h1>Brandan Isaacs</h1>
         <h3>Full Stack Developer</h3>
@@ -33,7 +32,6 @@ export default function Home() {
       <div className="home__item">
         <img src={mountainPhoto} alt="" />
       </div>
-      <div className="home__item"></div>
     </motion.div>
   );
 }

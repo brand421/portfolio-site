@@ -23,14 +23,14 @@
 
 .sidebar {
     height: 97vh;
-    
+    width: auto;
 }
 
 .photo__container {
     display: flex;
     align-items: center;
     padding: 20px 15px;
-    margin-bottom: 55%;
+    margin-bottom: 125px;
 }
 
 .photo img {
@@ -38,13 +38,14 @@
     border-radius: 50%;
     margin-left: 5%;
     animation: pulse-white 5s infinite;
+    cursor: pointer;
 }
 
 .menu__item {
     display: flex;
     align-items:center;
     justify-content: flex-start;
-    padding: 4% 0 4% 1%;
+    padding: 6% 0 6% 1%;
     transition: all .5s;
     font-size: 25px;
 }
@@ -52,6 +53,12 @@
 
 .menu__item:hover {
     background-color: rgba(127, 255, 212, 0.541);
+}
+
+@media screen and (max-width: 550px) {
+    .photo img {
+        width: 100px;
+    }
 }
 /* 
 .sidebar__container {
