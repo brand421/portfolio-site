@@ -28,7 +28,7 @@ export default function Projects() {
       }}
     >
       <div className="heading__text">
-        <h1 className="projects__heading">Projects I have completed</h1>
+        <h1 className="projects__heading">Completed Projects</h1>
       </div>
       <div className="carousel">
         <Carousel
