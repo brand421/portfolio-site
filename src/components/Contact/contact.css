@@ -3,6 +3,7 @@
     height: 97vh;
     margin-left: 250px;
     color: white;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;

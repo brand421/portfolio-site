@@ -28,7 +28,7 @@ export default function Sidebar({ children }) {
         <motion.div
           animate={{
             marginLeft: showSidebar ? "0" : "-250px",
-            // display: showSidebar ? "" : "none",
+            display: showSidebar ? "" : "none",
             opacity: showSidebar ? 1 : 0,
           }}
         >

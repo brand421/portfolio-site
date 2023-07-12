@@ -69,6 +69,11 @@ body {
 
 
 @media screen and (max-width: 400px) {
+
+    .home__container {
+        margin-left: 0;
+    }
+
     .home__item {
         height: 100px;
         margin-bottom: 0;

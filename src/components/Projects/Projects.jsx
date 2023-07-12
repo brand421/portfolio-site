@@ -36,18 +36,16 @@ export default function Projects() {
           dynamicHeight={false}
           autoPlay
           stopOnHover
+          swipeable
           showThumbs={false}
           width="100%"
           renderIndicator={(clickHandler, isSelected, index) => {
             return <li key={index} style={{ visibility: "none" }} />;
           }}
           statusFormatter={(currentItem, total) => {
-            return (
-              <p>
-                Project {currentItem} of {total}
-              </p>
-            );
+            return <p></p>;
           }}
+          className="carousel__div"
         >
           {projectItems.map((project, index) => (
             <div>

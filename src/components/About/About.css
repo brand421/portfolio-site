@@ -58,10 +58,14 @@ h3 {
 
 @media screen and (max-width: 550px) {
 
+    .about__container {
+        margin-left: 0;
+    }
+
     .about__text {
         margin-right: 39%;
         width: 75%;
-        margin-left: 5%;
+        margin-left: 0;
     }
 
     .about__photo {
