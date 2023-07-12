@@ -91,15 +91,13 @@ li ::marker {
     }
 
     .heading__text {
-    padding-top: 35%;
+    padding-top: 75%;
     }
 
     .carousel__div {
         width: 100%;
         margin-top: 0;
+
     }
 
-    .carousel__header {
-        
-    }
 }

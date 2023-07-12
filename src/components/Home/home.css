@@ -4,7 +4,6 @@ body {
 }
 
 .home__container {
-    position: fixed;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

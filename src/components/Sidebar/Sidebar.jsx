@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import "./sidebar.css";
 import "../../App.css";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Sidebar({ children }) {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -25,27 +25,31 @@ export default function Sidebar({ children }) {
             />
           </div>
         </div>
-        <motion.div
-          animate={{
-            marginLeft: showSidebar ? "0" : "-250px",
-            display: showSidebar ? "" : "none",
-            opacity: showSidebar ? 1 : 0,
-          }}
-        >
-          {sidebarItems.map((item, index) => (
-            <NavLink
-              to={item.itemPath}
-              key={index}
-              className="menu__item"
-              activeclassName="active"
-            >
-              <IconButton sx={{ ":hover": { backgroundColor: "transparent" } }}>
-                {item.itemIcon}
-              </IconButton>
-              <div className="menu__text">{item.itemName}</div>
-            </NavLink>
-          ))}
-        </motion.div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            animate={{
+              marginLeft: showSidebar ? "0" : "-250px",
+              display: showSidebar ? "" : "none",
+              opacity: showSidebar ? 1 : 0,
+            }}
+          >
+            {sidebarItems.map((item, index) => (
+              <NavLink
+                to={item.itemPath}
+                key={index}
+                className="menu__item"
+                activeclassName="active"
+              >
+                <IconButton
+                  sx={{ ":hover": { backgroundColor: "transparent" } }}
+                >
+                  {item.itemIcon}
+                </IconButton>
+                <div className="menu__text">{item.itemName}</div>
+              </NavLink>
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </div>
       <main>{children}</main>
     </div>
