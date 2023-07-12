@@ -28,7 +28,7 @@ export default function Projects() {
       }}
     >
       <div className="heading__text">
-        <h1 className="projects__heading">Projects I have completed</h1>
+        <h1 className="projects__heading">Completed Projects</h1>
       </div>
       <div className="carousel">
         <Carousel
@@ -36,18 +36,16 @@ export default function Projects() {
           dynamicHeight={false}
           autoPlay
           stopOnHover
+          swipeable
           showThumbs={false}
-          width="65%"
+          width="100%"
           renderIndicator={(clickHandler, isSelected, index) => {
             return <li key={index} style={{ visibility: "none" }} />;
           }}
           statusFormatter={(currentItem, total) => {
-            return (
-              <p>
-                Project {currentItem} of {total}
-              </p>
-            );
+            return <p></p>;
           }}
+          className="carousel__div"
         >
           {projectItems.map((project, index) => (
             <div>

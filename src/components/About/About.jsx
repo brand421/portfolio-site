@@ -21,11 +21,10 @@ export default function About() {
       }}
       exit={{
         opacity: 0,
-        transform: "translateX(-50px)",
-        transition: { duration: 0.1 },
+        transform: "translateX(50px)",
+        transition: 1,
       }}
     >
-      <div className="about__item"></div>
       <div className="about__item">
         <img
           className="about__photo"
@@ -47,7 +46,6 @@ export default function About() {
           for file backup and media storage.
         </p>
       </div>
-      <div className="about__item"></div>
     </motion.div>
   );
 }
