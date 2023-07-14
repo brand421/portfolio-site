@@ -1,7 +1,7 @@
 import {
   HomeOutlined,
   DataObjectOutlined,
-  PersonOutlineOutlined,
+  // PersonOutlineOutlined,
   EmailOutlined,
 } from "@mui/icons-material";
 
