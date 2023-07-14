@@ -26,6 +26,7 @@ export default function Home() {
           transition: "2s",
           delay: "2s",
         }}
+        key={id}
       >
         <div className="home__item home__text">
           <h1>Brandan Isaacs</h1>

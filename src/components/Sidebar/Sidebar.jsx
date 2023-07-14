@@ -15,22 +15,26 @@ export default function Sidebar({ children }) {
   };
   return (
     <div className="container">
-      <div className="sidebar">
-        <div className="photo__container">
-          <div className="photo">
-            <img
-              src={portrait}
-              alt="Brandan portrait"
-              onClick={handleShowSidebar}
-            />
+      <AnimatePresence mode="wait">
+        <div className="sidebar">
+          <div className="photo__container">
+            <div className="photo">
+              <img
+                src={portrait}
+                alt="Brandan portrait"
+                onClick={handleShowSidebar}
+              />
+            </div>
           </div>
-        </div>
-        <AnimatePresence mode="wait">
+
           <motion.div
             animate={{
               marginLeft: showSidebar ? "0" : "-250px",
               display: showSidebar ? "" : "none",
               opacity: showSidebar ? 1 : 0,
+            }}
+            transition={{
+              display: { delay: 0.25 },
             }}
           >
             {sidebarItems.map((item, index) => (
@@ -49,8 +53,8 @@ export default function Sidebar({ children }) {
               </NavLink>
             ))}
           </motion.div>
-        </AnimatePresence>
-      </div>
+        </div>
+      </AnimatePresence>
       <main>{children}</main>
     </div>
   );
