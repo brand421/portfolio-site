@@ -23,8 +23,9 @@ export default function Projects() {
       }}
       exit={{
         opacity: 0,
-        transform: "translateX(-50px)",
-        transition: { duration: 0.1 },
+        transform: "translateX(50px)",
+        transition: "2s",
+        delay: "2s",
       }}
     >
       <div className="heading__text">

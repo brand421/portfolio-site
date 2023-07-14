@@ -24,8 +24,9 @@ function Contact() {
       }}
       exit={{
         opacity: 0,
-        transform: "translateX(-50px)",
-        transition: { duration: 0.1 },
+        transform: "translateX(50px)",
+        transition: "2s",
+        delay: "2s",
       }}
     >
       <div>

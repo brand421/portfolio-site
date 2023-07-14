@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import "./sidebar.css";
 import "../../App.css";
 import React, { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Sidebar({ children }) {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -15,47 +15,43 @@ export default function Sidebar({ children }) {
   };
   return (
     <div className="container">
-      <AnimatePresence mode="wait">
-        <div className="sidebar">
-          <div className="photo__container">
-            <div className="photo">
-              <img
-                src={portrait}
-                alt="Brandan portrait"
-                onClick={handleShowSidebar}
-              />
-            </div>
+      <div className="sidebar">
+        <div className="photo__container">
+          <div className="photo">
+            <img
+              src={portrait}
+              alt="Brandan portrait"
+              onClick={handleShowSidebar}
+            />
           </div>
-
-          <motion.div
-            animate={{
-              marginLeft: showSidebar ? "0" : "-250px",
-              display: showSidebar ? "" : "none",
-              opacity: showSidebar ? 1 : 0,
-            }}
-            transition={{
-              display: { delay: 0.25 },
-            }}
-          >
-            {sidebarItems.map((item, index) => (
-              <NavLink
-                to={item.itemPath}
-                key={index}
-                className="menu__item"
-                activeclassName="active"
-              >
-                <IconButton
-                  sx={{ ":hover": { backgroundColor: "transparent" } }}
-                >
-                  {item.itemIcon}
-                </IconButton>
-                <div className="menu__text">{item.itemName}</div>
-              </NavLink>
-            ))}
-          </motion.div>
         </div>
-      </AnimatePresence>
-      <main>{children}</main>
+
+        <motion.div
+          animate={{
+            marginLeft: showSidebar ? "0" : "-250px",
+            display: showSidebar ? "" : "none",
+            opacity: showSidebar ? 1 : 0,
+          }}
+          transition={{
+            display: { delay: 0.15 },
+          }}
+        >
+          {sidebarItems.map((item, index) => (
+            <NavLink
+              to={item.itemPath}
+              key={index}
+              className="menu__item"
+              activeclassName="active"
+            >
+              <IconButton sx={{ ":hover": { backgroundColor: "transparent" } }}>
+                {item.itemIcon}
+              </IconButton>
+              <div className="menu__text">{item.itemName}</div>
+            </NavLink>
+          ))}
+        </motion.div>
+      </div>
+      <motion.main>{children}</motion.main>
     </div>
   );
 
