@@ -11,6 +11,11 @@ const sidebarItems = [
     itemIcon: <HomeOutlined sx={{ color: "white" }} />,
     itemPath: "/",
   },
+  // {
+  //   itemName: "About",
+  //   itemIcon: <PersonOutlineOutlined sx={{ color: "white" }} />,
+  //   itemPath: "/about",
+  // },
   {
     itemName: "Projects",
     itemIcon: <DataObjectOutlined sx={{ color: "white" }} />,
