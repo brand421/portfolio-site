@@ -31,7 +31,28 @@ export default function Projects() {
       <div className="heading__text">
         <h1 className="projects__heading">Completed Projects</h1>
       </div>
-      <div className="carousel">
+      <div className="project__column">
+        {projectsItems.map((project, index) => {
+          <div>
+            <h3 className="project__header">{project.projectName}</h3>
+            <div>
+              <a href={project.projectGithub} target="_blank" rel="noreferrer">
+                <div>
+                  <img
+                    className="project__img"
+                    src={project.projectImg}
+                    alt=""
+                    aria-label={project.projectDescr}
+                  />
+                </div>
+              </a>
+            </div>
+            <br />
+            <p>{project.projectDescr}</p>
+          </div>;
+        })}
+      </div>
+      {/* <div className="carousel">
         <Carousel
           infiniteLoop
           dynamicHeight={false}
@@ -74,7 +95,7 @@ export default function Projects() {
             </div>
           ))}
         </Carousel>
-      </div>
+      </div> */}
     </motion.div>
   );
 }
