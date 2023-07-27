@@ -30,6 +30,10 @@ export default function Projects() {
     >
       <div className="heading__text">
         <h1 className="projects__heading">Completed Projects</h1>
+        <h3>
+          Check out my <a href="https://github.com/brand421">Github page</a> for
+          more!
+        </h3>
       </div>
       <div className="project__column">
         {projectsItems.map((project, index) => {
