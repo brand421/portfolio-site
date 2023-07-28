@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./projects.css";
 import projectItems from "./projectItems";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 
 export default function Projects() {
   return (
