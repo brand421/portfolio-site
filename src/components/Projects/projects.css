@@ -4,18 +4,21 @@
     flex-wrap: nowrap;
     align-items: center;  
     justify-content: center;
-    margin-left: 56%;
-    height: 97vh;
-    width: 100%;
+    margin-left: 35%;
+    height: auto;
+    width: 150%;
     color: white;
     background: inherit;    
 }
 
 .heading__text {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
-    margin-bottom: 0;
+    justify-content: center;
+    height: 10%;
+    width: 35%;
+    margin-bottom: 1.5%;
 }
 
 .projects__heading {
@@ -25,36 +28,39 @@
     flex-direction: column;
     justify-content: center;
     width: auto;
-    margin-bottom: 0;
     margin-top: 15%;
 }
 
 .projects__subheading {
     display: flex;
-    margin-top: 0;
+    margin-bottom: 1.5%;
 }
 
 .project__column {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-
-.carousel__img {
+.project__img {
     width: 500px;
     height: 500px;
     margin-bottom: 15px;
 }
 
-.carousel__header {
-    margin-bottom: 15px;
+.project__tile {
+    width: 500px;
+    text-align: center;
+}
+
+.project__tile:nth-child(even) {
+    margin-left: 5%;
+}
+
+.project__header {
+    margin-bottom: 2%;
 }
 
 .github__link {
@@ -72,15 +78,18 @@ li ::marker {
 @media screen and (max-width: 1450px) {
 
     .projects__container {
-        margin-left: 20%;
+        width: 100%;
+        /* margin-left: 5%; */
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .carousel__header {
-    margin-bottom: 15px;
+    .project__tile:nth-child(even) {
+        margin-left: 0;
     }
 
     .heading__text {
-        /* margin-bottom: 10%; */
+        width: 50%;
     }
 }
 
@@ -98,9 +107,25 @@ li ::marker {
 @media screen and (max-width: 900px) {
 
     .projects__container {
-        margin-left: 0;
-        margin-right: 15%;
-        width: 75%;
+        margin-left: 0%;
+        width: 90%;
+    }
+
+    .projects__heading {
+        font-size: 1.5rem;
+    }
+
+    .projects__subheading {
+        font-size: 1rem;
+    }
+
+    .project__tile {
+        font-size: .8rem;
+    }
+
+    .project__img {
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -108,18 +133,24 @@ li ::marker {
 
     .projects__container {
         margin-left: 0;
-        margin-right: 15%;
         width: 55%;
     }
 
-    .heading__text {
-    padding-top: 75%;
+    .projects__heading {
+        font-size: .85rem;
     }
 
-    .carousel__div {
-        width: 100%;
-        margin-top: 0;
-
+    .projects__subheading {
+        text-align: center;
+        font-size: .6rem;
     }
 
+    .project__tile {
+        font-size: .6rem;
+    }
+
+    .project__img {
+        width: 200px;
+        height: 200px;
+    }
 }

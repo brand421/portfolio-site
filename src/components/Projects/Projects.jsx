@@ -30,16 +30,22 @@ export default function Projects() {
     >
       <div className="heading__text">
         <h1 className="projects__heading">Completed Projects</h1>
-        </div>
+
         <div className="projects__subheading">
-        <h3>
-          Check out my <a href="https://github.com/brand421">Github page</a> for
-          more!
-        </h3>
+          <h3>
+            <a
+              href="https://github.com/brand421"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Check out my Github page for more!
+            </a>
+          </h3>
+        </div>
       </div>
       <div className="project__column">
-        {projectItems.map((project, index) => {
-          <div>
+        {projectItems.map((project, index) => (
+          <div className="project__tile">
             <h3 className="project__header">{project.projectName}</h3>
             <div>
               <a href={project.projectGithub} target="_blank" rel="noreferrer">
@@ -53,55 +59,13 @@ export default function Projects() {
                 </div>
               </a>
             </div>
-            <br />
-            <p>{project.projectDescr}</p>
-          </div>;
-        })}
-      </div>
-      {/* <div className="carousel">
-        <Carousel
-          infiniteLoop
-          dynamicHeight={false}
-          autoPlay
-          stopOnHover
-          swipeable
-          showThumbs={false}
-          width="100%"
-          renderIndicator={(clickHandler, isSelected, index) => {
-            return <li key={index} style={{ visibility: "none" }} />;
-          }}
-          statusFormatter={(currentItem, total) => {
-            return <p></p>;
-          }}
-          className="carousel__div"
-        >
-          {projectItems.map((project, index) => (
-            <div>
-              <h3 className="carousel__header">{project.projectName}</h3>
-              <div>
-                <a
-                  href={project.projectGithub}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div>
-                    <img
-                      className="carousel__img"
-                      src={project.projectImg}
-                      alt=""
-                      aria-label={project.projectDescr}
-                    />
-                  </div>
-                </a>
-              </div>
 
-              <br></br>
-              <p>{project.projectDescr}</p>
-              <br />
-            </div>
-          ))}
-        </Carousel>
-      </div> */}
+            <br></br>
+            <p className="">{project.projectDescr}</p>
+            <br />
+          </div>
+        ))}
+      </div>
     </motion.div>
   );
 }

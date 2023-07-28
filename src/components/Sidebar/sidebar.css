@@ -72,9 +72,20 @@
     background-color: rgba(127, 255, 212, 0.541);
 }
 
+@media screen and (max-width: 900px) {
+    .photo img {
+        width: 75px;
+        animation: pulse-white-mobile 5s infinite;
+    }
+
+    .photo__container {
+        margin-bottom: 75px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .photo img {
-        width: 100px;
+        width: 75px;
         animation: pulse-white-mobile 5s infinite;
     }
 }
