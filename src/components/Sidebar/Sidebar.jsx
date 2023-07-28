@@ -8,11 +8,13 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Sidebar({ children }) {
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(
+    window.screen.width < 500 ? false : true
+  );
 
-  const handleShowSidebar = () => {
+  function handleShowSidebar(width) {
     setShowSidebar(!showSidebar);
-  };
+  }
   return (
     <div className="container">
       <div className="sidebar">
