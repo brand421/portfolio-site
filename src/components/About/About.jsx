@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutPhoto from "../../images/aboutPhoto.jpg";
+import greetingPhoto from "../../images/greeting_square.jpg";
 import "./about.css";
 
 export default function About() {
@@ -28,8 +28,8 @@ export default function About() {
       <div className="about__item">
         <img
           className="about__photo"
-          src={aboutPhoto}
-          alt="Brandan and his wife"
+          src={greetingPhoto}
+          alt="Brandan on top of a mountain"
         />
       </div>
       <div className="about__item about__text">
@@ -43,7 +43,8 @@ export default function About() {
           <br></br>
           Outside of coding, I enjoy hockey (both playing and watching), as well
           as playing guitar. I also run my own home server out of the basement
-          for file backup and media storage.
+          for file backup and media storage that utilizes a Linux-based OS that
+          utilizes docker functionality.
         </p>
       </div>
     </motion.div>
