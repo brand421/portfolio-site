@@ -3,7 +3,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import "./contact.css";
 import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
-import { CodeOutlined, FeedOutlined } from "@mui/icons-material";
+import { CodeOutlined, FeedOutlined, LinkedIn } from "@mui/icons-material";
 import resume from "./Brandan_resume.pdf";
 
 function Contact() {
@@ -32,6 +32,20 @@ function Contact() {
       <div>
         <h1 className="contact__header">Want to find out more about me?</h1>
         <div className="contact__links">
+          <IconButton
+            aria-label="paper"
+            sx={{
+              ":hover": { backgroundColor: "transparent" },
+              color: "white",
+            }}
+            disableRipple
+            href={resume}
+            download="Brandan Isaacs.pdf"
+            className="contact__icon"
+          >
+            <FeedOutlined fontSize="large" sx={{ color: "white" }} />
+            <h3 className="contact__text">Resume</h3>
+          </IconButton>
           <IconButton
             aria-label="email"
             sx={{
@@ -66,18 +80,19 @@ function Contact() {
             <h3 className="contact__text">Github</h3>
           </IconButton>
           <IconButton
-            aria-label="paper"
+            aria-label="linkedin"
             sx={{
               ":hover": { backgroundColor: "transparent" },
               color: "white",
             }}
+            href="https://www.linkedin.com/in/brandan-isaacs/"
+            target="_blank"
+            rel="noreferrer"
             disableRipple
-            href={resume}
-            download="Brandan Isaacs.pdf"
             className="contact__icon"
           >
-            <FeedOutlined fontSize="large" sx={{ color: "white" }} />
-            <h3 className="contact__text">Resume</h3>
+            <LinkedIn fontSize="large" sx={{ color: "white" }} />
+            <h3 className="contact__text">LinkedIn</h3>
           </IconButton>
         </div>
       </div>
