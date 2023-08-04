@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import greetingPhoto from "../../images/greeting_square.jpg";
+import greetingPhoto from "../../images/aboutPhoto.jpg";
 import "./about.css";
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
         <img
           className="about__photo"
           src={greetingPhoto}
-          alt="Brandan on top of a mountain"
+          alt="Brandan with wife"
         />
       </div>
       <div className="about__item about__text">
