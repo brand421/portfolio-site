@@ -75,7 +75,27 @@ h3 {
     }
 
     .about__photo {
-        width: 55%;
+        width: 45%;
+        margin-bottom: 25%;
+        margin-right: 39%;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+
+    .about__container {
+        margin-left: 0;
+    }
+
+    .about__text {
+        margin-right: 39%;
+        width: 75%;
+        margin-left: 0;
+    }
+
+    .about__photo {
+        width: 35%;
         margin-bottom: 25%;
         margin-right: 39%;
     }
