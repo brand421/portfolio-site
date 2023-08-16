@@ -46,7 +46,15 @@ export default function Projects() {
           <div className="project__tile">
             <h3 className="project__header">{project.projectName}</h3>
             <div>
-              <a href={project.projectGithub} target="_blank" rel="noreferrer">
+              <a
+                href={
+                  project.projectLink === ""
+                    ? project.projectGithub
+                    : project.projectLink
+                }
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div>
                   <img
                     className="project__img"

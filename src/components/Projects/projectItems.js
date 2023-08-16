@@ -1,16 +1,16 @@
 import propertySite from "./projectImages/property_management_site.jpg";
-import noteApp from "./projectImages/keeper_app.png";
+import songoftheDay from "./projectImages/songoftheday.jpg";
 import todoApp from "./projectImages/to-do-list.jpg";
 import blogSite from "./projectImages/blog_site.jpg";
 
 const projectItems = [
   {
-    projectName: "Note-Taking App",
-    projectImg: noteApp,
+    projectName: "Song of the Day",
+    projectImg: songoftheDay,
     projectDescr:
-      "A note-taking app that utilizes React useState to render notes",
-    projectLink: "http://www.google.com",
-    projectGithub: "https://github.com/brand421/keeper-app",
+      "A website that utilizes APIs, React, Node, and Express to generate a song of the day",
+    projectLink: "https://wordsongoftheday.com/",
+    projectGithub: "https://github.com/brand421/Song-of-the-day",
   },
   {
     projectName: "To-Do List",
