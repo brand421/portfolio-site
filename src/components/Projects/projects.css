@@ -1,3 +1,7 @@
+a {
+    text-decoration: underline;
+}
+
 .projects__container {
     display: flex;
     flex-direction: column;
@@ -13,7 +17,8 @@
 
 .heading__text {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     height: 10%;
@@ -33,7 +38,10 @@
 
 .projects__subheading {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 1.5%;
+    text-align: center;
 }
 
 .project__column {

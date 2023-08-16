@@ -36,8 +36,9 @@ export default function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              Click here to check out my Github page!
+              Click here to check out my Github page
             </a>
+            , or click on an image to check out the specific project!
           </h3>
         </div>
       </div>
