@@ -14,7 +14,7 @@ h3 {
     align-items: center;  
     justify-content: center; 
     color: white;
-    margin-left: 69%;
+    margin-left: 53%;
 }
 
 .about__item {
@@ -86,21 +86,27 @@ h3 {
 
     .about__container {
         margin-left: 0;
+        height: auto;
     }
 
     .about__item {
-        width: 75%;
+        width: auto;
+        margin-bottom: 0;
+        height: 0;
+        flex-direction: none;
     }
 
     .about__text {
-        /* margin-right: 39%; */
         width: 65%;
         margin-left: 15%;
     }
 
+    .about__header {
+        margin-bottom: 4%;
+    }
+
     .about__photo {
         width: 65%;
-        margin-bottom: 25%;
         margin-right: 39%;
     }
 }

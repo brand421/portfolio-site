@@ -37,7 +37,7 @@
     margin: 0;
     
 }
-.sidebar {
+.sidebar__list {
     height: 97vh;
     width: auto;
     z-index: 1;
@@ -94,5 +94,9 @@
 
     .photo img {
         width: 65px;
+    }
+
+    .sidebar {
+        padding-right: 5%;
     }
 }

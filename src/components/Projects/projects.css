@@ -8,7 +8,7 @@ a {
     flex-wrap: nowrap;
     align-items: center;  
     justify-content: center;
-    margin-left: 35%;
+    margin-left: 30%;
     height: auto;
     width: 150%;
     color: white;
@@ -121,6 +121,17 @@ li ::marker {
 
     .projects__heading {
         font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7%;
+        width: 100%;
     }
 
     .projects__subheading {
@@ -140,7 +151,7 @@ li ::marker {
 @media screen and (max-width: 550px) {
 
     .projects__container {
-        margin-left: 0;
+        /* margin-left: 3%; */
         width: 55%;
     }
 
