@@ -37,6 +37,7 @@ export default function Sidebar({ children }) {
           transition={{
             display: { delay: 0.15 },
           }}
+          className="sidebar__list"
         >
           {sidebarItems.map((item, index) => (
             <NavLink
